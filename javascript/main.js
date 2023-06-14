@@ -4,7 +4,7 @@ let edad = prompt("Ingrese su edad:");
 
 if (edad >= 21) {
   console.log(
-    "Como sos mayor de edad, podés elegir entre las siguientes experiencias: (a,b,c ó d)"
+    "👍🏼Como sos mayor de edad, podés elegir entre las siguientes experiencias: (a,b,c ó d)"
   );
   let experiencia = prompt(
     "Elegí tu CataExperience🥃: a) Nacional , b) Importado, c) De autor; d) Mix Premium"
@@ -46,7 +46,7 @@ function mostrarExperiencia(cata) {
 }
 
 function mostrarDescuentos() {
-  let mensaje = "";
+  let mensaje = "🥃Conocé nuestras promos🥃\n";
   for (let i = 2; i <= 10; i++) {
     let descuento = i * 5;
     mensaje += i + "  personas " + descuento + "% de descuento\n";
