@@ -54,7 +54,12 @@ function mostrarDescuentos() {
   return mensaje;
 }
 
-const carrito = [];
+const carrito = [
+  { codigo: "j", nombre: "Whisky Taylor", precio: 32000 },
+  { codigo: "c", nombre: "De autor", precio: 12000 },
+  { codigo: "h", nombre: "Whisky Zizek", precio: 8562 },
+  { codigo: "k", nombre: "Whisky Badiou", precio: 45000 },
+];
 
 const productos = [
   { codigo: "a", nombre: "Nacional", precio: 5000 },
@@ -70,9 +75,14 @@ const productos = [
   { codigo: "k", nombre: "Whisky Badiou", precio: 45000 },
 ];
 
-function buscarProductos(codigo.toLowerCase) {
+function buscarProductos(codigo) {
   let resultado = productos.find(
-    (producto) => producto.codigo === codigo
+    (producto) => producto.codigo === codigo.toLowerCase()
   );
   return resultado;
+}
+
+function terminarCompra() {
+  const cata = new Compra(carrito);
+  console.log(cata.obtenerSubtotal());
 }
