@@ -41,7 +41,9 @@ p {
   font-size: 1rem;
   text-align: jutify;
 }
-
+li {
+  list-style: none;
+}
 footer {
   background-color: #442517;
   padding: 1rem;
