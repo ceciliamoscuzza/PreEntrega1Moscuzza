@@ -53,3 +53,26 @@ function mostrarDescuentos() {
   }
   return mensaje;
 }
+
+const carrito = [];
+
+const productos = [
+  { codigo: "a", nombre: "Nacional", precio: 5000 },
+  { codigo: "b", nombre: "Importado", precio: 8000 },
+  { codigo: "c", nombre: "De autor", precio: 12000 },
+  { codigo: "d", nombre: "Mix Premium", precio: 16000 },
+  { codigo: "e", nombre: "Whisky Habermas", precio: 16000 },
+  { codigo: "f", nombre: "Whisky Butler", precio: 7990 },
+  { codigo: "g", nombre: "Whisky Latour", precio: 14000 },
+  { codigo: "h", nombre: "Whisky Zizek", precio: 8562 },
+  { codigo: "i", nombre: "Whisky Nussbaum", precio: 18000 },
+  { codigo: "j", nombre: "Whisky Taylor", precio: 32000 },
+  { codigo: "k", nombre: "Whisky Badiou", precio: 45000 },
+];
+
+function buscarProductos(codigo.toLowerCase) {
+  let resultado = productos.find(
+    (producto) => producto.codigo === codigo
+  );
+  return resultado;
+}
